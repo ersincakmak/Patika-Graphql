@@ -1,3 +1,3 @@
-# Homework 1
+# Homework 2
 
-This homework [link](https://app.patika.dev/moduller/graphql/odev-01).
+This homework [link](https://app.patika.dev/moduller/graphql/odev-02).
