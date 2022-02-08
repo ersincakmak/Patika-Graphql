@@ -8,9 +8,7 @@ const { makeExecutableSchema } = require('@graphql-tools/schema')
 const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
 const db = require('./data.js')
-const { PubSub } = require('graphql-subscriptions')
 const { typeDefs, resolvers } = require('./graphql/index.js')
-
 const startServer = async () => {
   const app = express()
 
@@ -42,7 +40,6 @@ const startServer = async () => {
     ],
     context: {
       db,
-      pubSub: new PubSub(),
     },
   })
 
@@ -56,5 +53,3 @@ const startServer = async () => {
 }
 
 startServer()
-
-exports.ben = 'Naber lan dümbük'

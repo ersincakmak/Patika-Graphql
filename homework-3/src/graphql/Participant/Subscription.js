@@ -1,4 +1,4 @@
-const { pubSub } = require('../../server')
+const { pubSub } = require('../variables')
 
 module.exports = {
   participantCreated: {

@@ -1,8 +1,10 @@
-const ctx = require('../index')
-console.log('Amunakoyarım', ctx)
+const { pubSub } = require('../variables')
 
 module.exports = {
   eventCreated: {
-    subscribe: () => pubSub.asyncIterator('eventCreated'),
+    subscribe: () => {
+      console.log('Çalışmış olması lazım')
+      return pubSub.asyncIterator('eventCreated')
+    },
   },
 }

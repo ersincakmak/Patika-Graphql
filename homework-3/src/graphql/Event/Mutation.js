@@ -1,8 +1,10 @@
+const { pubSub } = require('../variables')
+
 module.exports = {
   addEvent: (
     _parent,
     { input: { title, desc, date, from, to, location_id, user_id } },
-    { db, pubSub }
+    { db }
   ) => {
     const userIndex = db.users.findIndex((user) => user.id === user_id)
     const locationIndex = db.locations.findIndex(
