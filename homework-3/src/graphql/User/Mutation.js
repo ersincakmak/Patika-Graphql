@@ -1,5 +1,4 @@
-const { pubSub } = require('../variables')
-
+const pubSub = require('../pubSub')
 module.exports = {
   addUser: (_parent, { input: { username, email } }, { db }) => {
     const addedUser = {

@@ -1,5 +1,4 @@
-const { pubSub } = require('../variables')
-
+const pubSub = require('../pubSub')
 module.exports = {
   addEvent: (
     _parent,

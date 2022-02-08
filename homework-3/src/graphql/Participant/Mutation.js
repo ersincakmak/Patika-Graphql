@@ -1,5 +1,4 @@
-const { pubSub } = require('../variables')
-
+const pubSub = require('../pubSub')
 module.exports = {
   addParticipant: (_parent, { input: { user_id, event_id } }, { db }) => {
     const userIndex = db.users.findIndex((user) => user.id === user_id)
