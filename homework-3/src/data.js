@@ -1,4 +1,4 @@
-export const events = [
+const events = [
   {
     id: 1,
     title: 'Poker night',
@@ -31,7 +31,8 @@ export const events = [
   },
   {
     id: 4,
-    title: "It's an undeniable fact, really; the first wonderful grape is, in its own way, a fig",
+    title:
+      "It's an undeniable fact, really; the first wonderful grape is, in its own way, a fig",
     desc: 'By the waysome willing figs are thought of simply as raspberries. We can assume that any instance of a chicken can be construed as a decorous pomegranate. The hamsters could be said to resemble affectionate sharks! Yelling: "In modern times before wolfs, cats were only limes;" Congratulations to the owl that won the communicative deer with an apple. We know that authors often misinterpret the crocodile as an amicable lemon, when in actuality it feels more like a skillful frog; In recent years, before strawberries, frogs were only blueberries. A willing pig\'s cranberry comes with it the thought that the sincere scorpion is a seal.',
     date: '2019-08-10',
     from: '15:40',
@@ -114,7 +115,8 @@ export const events = [
   },
   {
     id: 12,
-    title: 'A courageous apple without bananas is truly a wolf of helpful currants',
+    title:
+      'A courageous apple without bananas is truly a wolf of helpful currants',
     desc: 'We can assume that any instance of a cat can be construed as a understanding raspberry. Their monkey was, in this moment, a detailed spider; Authors often misinterpret the currant as a compassionate alligator, when in actuality it feels more like an ambitious kitten. Their puppy was, in this moment, an optimistic lemon? They were lost without the impartial melon that composed their rat.',
     date: '2019-03-23',
     from: '08:19',
@@ -124,7 +126,8 @@ export const events = [
   },
   {
     id: 13,
-    title: 'Draped neatly on a hanger, some helpful scorpions are thought of simply as bees',
+    title:
+      'Draped neatly on a hanger, some helpful scorpions are thought of simply as bees',
     desc: 'A creative alligator is a strawberry of the mind. A grapefruit is a cat\'s orange? However, a melon sees a peach as a witty hamster. In his own words: "The zeitgeist contends that a plum is a hamster from the right perspective." Wispering: "Some impartial monkeys are thought of simply as hippopotamus." This is not to discredit the idea that some friendly persimmons are thought of simply as cats? Incomprehensibilities of a emotional banana and a seal made a strawberry polite. Frank kiwis show us how flies can be apples?',
     date: '2019-11-02',
     from: '22:34',
@@ -195,7 +198,8 @@ export const events = [
   },
   {
     id: 20,
-    title: 'They were lost without the modern duck that composed their watermelon',
+    title:
+      'They were lost without the modern duck that composed their watermelon',
     desc: 'Extending this logic, we can assume that any instance of a lobster can be construed as a lucky plum! Incomprehensibilities of a enchanting snail and a kiwi made a nectarine responsible. Few can name a fair cat that isn\'t a pioneering spider! Some posit the delightful eagle to be less than cheerful. The glorious goat reveals itself as a broad-minded frog to those who look; Quoting with intend: "This is not to discredit the idea that the first romantic lemon is, in its own way, a crocodile." The first forceful blueberry is, in its own way, a watermelon. Having been a gymnast, a chicken can hardly be considered a sensible pineapple without also being a seal.',
     date: '2019-07-30',
     from: '09:15:12',
@@ -205,7 +209,8 @@ export const events = [
   },
   {
     id: 21,
-    title: 'As far as he is concerned, before turtles, lions were only giraffes',
+    title:
+      'As far as he is concerned, before turtles, lions were only giraffes',
     desc: "We can assume that any instance of a dog can be construed as a rhetorical kumquat; The first pro-active tiger is, in its own way, a grapefruit. A goat is a tangerine's fig. They were lost without the sensitive strawberry that composed their pineapple. It's very tricky, if not impossible, their grapefruit was, in this moment, a careful giraffe. Having been a gymnast, one cannot separate cranberries from adventurous rats. Plucky goldfishes show us how oranges can be seals;",
     date: '2019-07-27',
     from: '20:38',
@@ -215,7 +220,8 @@ export const events = [
   },
   {
     id: 22,
-    title: 'In his own words: "The first funny cheetah is, in its own way, a wolf.',
+    title:
+      'In his own words: "The first funny cheetah is, in its own way, a wolf.',
     desc: 'An elephant is the goat of a currant? Shouting with happiness, before rats, cheetahs were only fishes. Those crocodiles are nothing more than pandas. She said: "Incomprehensibilities of a kind raspberry and a grape made a banana romantic?" He said: "Some affable strawberries are thought of simply as oranges?" They were lost without the quiet ant that composed their sheep?',
     date: '2019-04-26',
     from: '12:14',
@@ -225,7 +231,8 @@ export const events = [
   },
   {
     id: 23,
-    title: 'A thrifty grapefruit without sharks is truly a eagle of charming persimmons',
+    title:
+      'A thrifty grapefruit without sharks is truly a eagle of charming persimmons',
     desc: 'The dashing pomegranate comes from a witty pineapple. Of course, authors often misinterpret the crocodile as a witty octopus, when in actuality it feels more like a dashing peach! He said: "Incomprehensibilities of a funny fox and a scorpion made a grape amused." Yelling: "Incomprehensibilities of a amusing seal and a peach made a cheetah dashing!" As far as we can estimate, a kind strawberry without sheeps is truly a zebra of charming ducks. He said: "They were lost without the determined apple that composed their fig." The pleasant deer reveals itself as a tough lemon to those who look. Shouting with happiness, before rats, cherries were only pears.',
     date: '2019-03-28',
     from: '06:02',
@@ -255,7 +262,7 @@ export const events = [
   },
 ]
 
-export const locations = [
+const locations = [
   {
     id: 1,
     name: 'Lake Casandra',
@@ -433,7 +440,7 @@ export const locations = [
   },
 ]
 
-export const users = [
+const users = [
   {
     id: 1,
     username: 'Strawberry6',
@@ -561,7 +568,7 @@ export const users = [
   },
 ]
 
-export const participants = [
+const participants = [
   {
     id: 1,
     user_id: 1,
@@ -813,3 +820,10 @@ export const participants = [
     event_id: 12,
   },
 ]
+
+module.exports = {
+  events,
+  locations,
+  users,
+  participants,
+}
