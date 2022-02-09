@@ -4,5 +4,5 @@ module.exports = {
   location: (parent, _args, { db }) =>
     db.locations.find((location) => location.id === parent.location_id),
   participants: (parent, _args, { db }) =>
-    db.participants.filter((participant) => participant.event_id !== parent.id),
+    db.participants.filter((participant) => participant.event_id == parent.id),
 }
