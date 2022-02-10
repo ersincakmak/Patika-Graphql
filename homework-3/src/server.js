@@ -20,7 +20,16 @@ const startServer = async () => {
   })
 
   const subscriptionServer = SubscriptionServer.create(
-    { schema, execute, subscribe },
+    {
+      schema,
+      execute,
+      subscribe,
+      onConnect() {
+        return {
+          db,
+        }
+      },
+    },
     { server: httpServer, path: '/graphql' }
   )
 
