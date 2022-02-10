@@ -1,0 +1,44 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 0.9375rem; /* 15px */
+  gap: 1rem;
+}
+
+.title {
+  position: relative;
+  width: min(50rem, 100%); /* 800px */
+  margin-inline: auto;
+}
+
+.title h1 {
+  margin-inline: auto;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: white;
+  width: max-content;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  background: #404040;
+  z-index: -1;
+}
+
+.event_list {
+  width: min(50rem, 100%); /* 800px */
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 8px */
+}
