@@ -15,7 +15,7 @@ module.exports = {
       throw new Error('There is no location with this event_id.')
     } else {
       const addedEvent = {
-        id: events.length + 1,
+        id: db.events.length + 1,
         title,
         desc,
         date,
