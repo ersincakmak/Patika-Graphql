@@ -1,0 +1,27 @@
+.react-select__control {
+  box-shadow: none !important;
+  border-radius: 0.25rem !important; /* 4px */
+  outline: none;
+  border: 1px solid #aaa !important;
+  width: 100%;
+  color: #404040;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.875rem; /* 14px */
+  cursor: pointer !important;
+}
+
+.react-select__control:hover,
+.react-select__control--is-focused,
+.react-select__control--menu-is-open {
+  border-color: #404040 !important;
+}
+
+.react-select__indicator {
+  padding: 0.5rem 0.75rem; /* 8px 12px */
+}
+
+.react-select__value-container {
+  line-height: 1;
+}

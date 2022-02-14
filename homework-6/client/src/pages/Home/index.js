@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client'
 import React, { useEffect } from 'react'
+import EventCreateForm from '../../components/EventCreateForm'
 import EventRow from '../../components/EventRow'
 import { GET_EVENTS } from '../../graphql/queries'
 import { EVENT_CREATE_SUBSCRIPTION } from '../../graphql/subscriptions'
@@ -22,19 +23,20 @@ const Home = () => {
     }
   }, [loading, called, subscribeToMore])
 
-  if (loading) {
-    return <div>Loading ...</div>
-  }
-
   return (
     <div className={styles.page}>
+      <EventCreateForm />
       <div className={styles.title}>
         <h1>Events</h1>
       </div>
       <ul className={styles.event_list}>
-        {data?.events.map((event, index) => (
-          <EventRow {...event} key={index} />
-        ))}
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          data?.events.map((event, index) => (
+            <EventRow {...event} key={index} />
+          ))
+        )}
       </ul>
     </div>
   )

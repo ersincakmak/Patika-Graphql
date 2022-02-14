@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.input {
+  padding: 0.5rem 0.75rem; /* 8px 12px */
+  border-radius: 0.25rem; /* 4px */
+  outline: none;
+  border: 1px solid #aaa;
+  width: 100%;
+  color: #404040;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: border 0.2s ease;
+  font-size: 0.875rem; /* 14px */
+  resize: none;
+}
+
+.input:disabled {
+  background-color: #eee;
+}
+
+.input:is(:focus, :hover) {
+  border-color: #202020;
+}
+
+.error {
+  font-size: 0.875rem; /* 14px */
+  color: red;
+  margin-top: 0.125rem; /* 2px */
+}
