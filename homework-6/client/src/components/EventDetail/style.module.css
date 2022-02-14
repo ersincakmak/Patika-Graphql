@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  width: min(50rem, 100%); /* 800px */
+  border-radius: 0.5rem; /* 4px */
+  border: 2px solid #ababab;
+  padding: 0.9375rem; /* 15px */
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem; /* 15px */
+}
+
+.title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem; /* 10px */
+  align-items: center;
+}
+
+.info_icon {
+  padding: 0.5rem; /* 8px*/
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_icon svg {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.info_labels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem; /* 2px */
+  align-items: center;
+}
+
+.info_primaryLabel {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+}
+
+.info_secondaryLabel {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem; /* 5px */
+}
+
+.about h1 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+
+.divider {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.divider span {
+  display: inline-block;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: white;
+  width: max-content;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  background: #404040;
+  z-index: -1;
+}
+
+.participant_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.625rem; /* 10px */
+}
+
+.participant_row {
+  padding: 0.5rem 0.75rem; /* 8px 12px*/
+  border: 1px solid #404040;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 0.25rem; /* 4px */
+}
+
+.participant_username {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.25rem; /* 20px */
+  text-decoration: underline;
+}

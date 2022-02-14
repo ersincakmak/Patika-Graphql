@@ -1,0 +1,15 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 0.9375rem; /* 15px */
+  gap: 1rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
