@@ -1,0 +1,8 @@
+type Continent {
+  name: String!
+}
+
+type Query {
+  continents: [Continent]
+  continent(code: String!): Continent
+}
