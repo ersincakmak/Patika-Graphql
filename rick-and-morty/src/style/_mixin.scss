@@ -1,0 +1,17 @@
+// Media Queries Start
+
+@mixin for-tablet-up {
+  // 900px
+  @media (min-width: 56.25rem) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  // 1200px
+  @media (min-width: 75rem) {
+    @content;
+  }
+}
+
+// Media Queries End

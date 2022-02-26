@@ -1,6 +1,8 @@
 import React from 'react'
-import './App.scss'
+import 'style/Reset.scss'
+import 'style/App.scss'
+import Header from 'components/Header'
 
 export default function App() {
-  return <>Hello</>
+  return <Header />
 }
