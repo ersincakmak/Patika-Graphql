@@ -3,8 +3,8 @@ import { IoReloadOutline } from 'react-icons/io5'
 import { FilterContext } from '../../contexts/FilterContext'
 import Divider from '../Divider'
 import GenderFilter from './GenderFilter'
-import LocationFilter from './LocationFilter'
 import SpeciesFilter from './SpeciesFilter'
+import LocationFilter from './LocationFilter'
 import './style.scss'
 
 function Filters() {

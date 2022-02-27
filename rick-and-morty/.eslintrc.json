@@ -26,5 +26,14 @@
         "endOfLine": "auto"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["./src/generated/graphql.tsx"],
+      "rules": {
+        "import/newline-after-import": ["off"],
+        "prettier/prettier": ["off"]
+      }
+    }
+  ]
 }

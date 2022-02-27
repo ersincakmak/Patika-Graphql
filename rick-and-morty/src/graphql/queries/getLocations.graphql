@@ -1,0 +1,7 @@
+query getAllLocations {
+  locations {
+    results {
+      name
+    }
+  }
+}
