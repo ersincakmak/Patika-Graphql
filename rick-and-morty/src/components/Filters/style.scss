@@ -1,8 +1,107 @@
+@import '~style/mixin';
+
+body.filters-active {
+  .filters {
+    &__inner {
+      border-radius: 1rem 1rem 0 0;
+      position: absolute;
+
+      transform: translateY(4rem);
+
+      ~ .filters__buttons {
+        display: flex;
+      }
+    }
+  }
+}
+
 .filters {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 16rem; // 320px
+  &__inner {
+    position: fixed;
+    transform: translateY(100vh);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    padding-bottom: 5rem;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @include for-tablet-up {
+      position: relative !important;
+      transform: unset !important;
+      inset: unset !important;
+      width: 16rem; // 320px
+      border-radius: 0;
+      padding: 0;
+      transition: none !important;
+    }
+  }
+
+  &__buttons {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    z-index: 2;
+
+    @include for-tablet-up {
+      display: none !important;
+    }
+  }
+
+  .filter__button {
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #e2a400;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 1;
+
+    &--result {
+      background-color: #e2a400;
+      color: #fff;
+    }
+
+    &--show {
+      background-color: #e2a400;
+      color: #fff;
+      box-shadow: 0 0 16px 0 #e2a400;
+    }
+
+    &--reset {
+      background-color: #ddd;
+      color: #606060;
+    }
+  }
+
+  &__show {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include for-tablet-up {
+      display: none;
+    }
+  }
 
   .reset-btn {
     cursor: pointer;
