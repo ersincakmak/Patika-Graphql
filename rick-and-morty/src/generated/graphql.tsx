@@ -202,12 +202,70 @@ export type QueryLocationsByIdsArgs = {
   ids: Array<Scalars['ID']>;
 };
 
+export type GetAllCharactersQueryVariables = Exact<{
+  page?: InputMaybe<Scalars['Int']>;
+  filter?: InputMaybe<FilterCharacter>;
+}>;
+
+
+export type GetAllCharactersQuery = { __typename?: 'Query', characters?: { __typename?: 'Characters', info?: { __typename?: 'Info', count?: number | null, pages?: number | null, next?: number | null, prev?: number | null } | null, results?: Array<{ __typename?: 'Character', id?: string | null, name?: string | null, species?: string | null, image?: string | null, location?: { __typename?: 'Location', name?: string | null } | null } | null> | null } | null };
+
 export type GetAllLocationsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type GetAllLocationsQuery = { __typename?: 'Query', locations?: { __typename?: 'Locations', results?: Array<{ __typename?: 'Location', name?: string | null } | null> | null } | null };
 
 
+export const GetAllCharactersDocument = gql`
+    query getAllCharacters($page: Int, $filter: FilterCharacter) {
+  characters(page: $page, filter: $filter) {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    results {
+      id
+      name
+      species
+      image
+      location {
+        name
+      }
+    }
+  }
+}
+    `;
+
+/**
+ * __useGetAllCharactersQuery__
+ *
+ * To run a query within a React component, call `useGetAllCharactersQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetAllCharactersQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetAllCharactersQuery({
+ *   variables: {
+ *      page: // value for 'page'
+ *      filter: // value for 'filter'
+ *   },
+ * });
+ */
+export function useGetAllCharactersQuery(baseOptions?: Apollo.QueryHookOptions<GetAllCharactersQuery, GetAllCharactersQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetAllCharactersQuery, GetAllCharactersQueryVariables>(GetAllCharactersDocument, options);
+      }
+export function useGetAllCharactersLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetAllCharactersQuery, GetAllCharactersQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetAllCharactersQuery, GetAllCharactersQueryVariables>(GetAllCharactersDocument, options);
+        }
+export type GetAllCharactersQueryHookResult = ReturnType<typeof useGetAllCharactersQuery>;
+export type GetAllCharactersLazyQueryHookResult = ReturnType<typeof useGetAllCharactersLazyQuery>;
+export type GetAllCharactersQueryResult = Apollo.QueryResult<GetAllCharactersQuery, GetAllCharactersQueryVariables>;
 export const GetAllLocationsDocument = gql`
     query getAllLocations {
   locations {

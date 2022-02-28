@@ -1,3 +1,5 @@
+@import '~style/mixin';
+
 html,
 body {
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -12,8 +14,18 @@ body {
 
 .page-container {
   display: flex;
-  padding: 2rem 1rem; // 32px 16px
-  gap: 1rem;
+  padding: 2rem 1.5rem; // 32px 16px
+  padding-top: 3rem;
+  gap: 0;
+
+  @include for-tablet-up {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+
+  @include for-desktop-up {
+    gap: 4rem;
+  }
 }
 
 .container-header {
