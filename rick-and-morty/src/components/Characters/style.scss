@@ -1,5 +1,11 @@
 @import '~style/mixin';
 
+body.filters-active {
+  .content {
+    display: none;
+  }
+}
+
 .content {
   flex: 1;
   height: max-content;
