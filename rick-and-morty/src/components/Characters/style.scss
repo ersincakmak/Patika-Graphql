@@ -85,6 +85,7 @@ body.filters-active {
   }
 
   .card {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     gap: 2rem;
