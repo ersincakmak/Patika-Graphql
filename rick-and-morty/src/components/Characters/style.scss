@@ -133,3 +133,48 @@ body.filters-active {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  gap: 8px; // 4px
+  font-size: 14px;
+  align-self: center;
+
+  .page,
+  .break,
+  .previous,
+  .next {
+    a {
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background-color: #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .selected {
+    a {
+      color: white;
+      background-color: #e2a400;
+      background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.34),
+        hsla(0, 0%, 100%, 0)
+      );
+    }
+  }
+
+  .previous,
+  .next {
+    margin-inline: 0.5rem; // 8px
+    a {
+      font-size: 1.5rem;
+      background-color: transparent;
+    }
+  }
+}
