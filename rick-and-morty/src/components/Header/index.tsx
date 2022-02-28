@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { BiSearch } from 'react-icons/bi'
+import { FaTimes } from 'react-icons/fa'
 import { FilterContext } from '../../contexts/FilterContext'
 import './style.scss'
 
@@ -7,6 +8,11 @@ function Header() {
   const [searchText, setSearchText] = useState('')
 
   const { setName } = useContext(FilterContext)
+
+  const resetSearch = () => {
+    setSearchText('')
+    setName('')
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,6 +33,15 @@ function Header() {
           onInput={(e) => setSearchText(e.currentTarget.value)}
           placeholder="Search"
         />
+        {searchText.length > 0 && (
+          <button
+            type="button"
+            className="inputContainer__reset"
+            onClick={resetSearch}
+          >
+            <FaTimes />
+          </button>
+        )}
       </div>
     </header>
   )

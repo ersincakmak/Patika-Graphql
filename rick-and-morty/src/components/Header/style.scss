@@ -46,6 +46,15 @@ header {
       transform: none;
     }
 
+    &__reset {
+      padding: 0.5rem;
+      padding-right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
     .icon {
       color: #e2a400;
       font-size: 1.5rem;

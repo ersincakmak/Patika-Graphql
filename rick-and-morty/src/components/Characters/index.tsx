@@ -4,6 +4,7 @@ import { useGetAllCharactersQuery } from '../../generated/graphql'
 import { ICharacter } from '../../types/character'
 import Spinner from '../Spinner'
 import CharacterCard from './CharacterCard'
+import Error from './Error'
 import './style.scss'
 
 function Characters() {
@@ -30,6 +31,7 @@ function Characters() {
       <div className="container-header content__header">
         <div className="right">{data?.characters?.info?.count} Results</div>
       </div>
+      {!loading && called && characters.length < 1 && <Error />}
       <div className="charactersGrid">
         {loading && <Spinner locate="center" />}
         {called &&
