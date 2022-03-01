@@ -1,0 +1,26 @@
+{
+  "name": "anonymous-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.3",
+    "@graphql-tools/schema": "^8.3.2",
+    "apollo-server": "^3.6.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "graphql": "^16.3.0",
+    "graphql-redis-subscriptions": "^2.4.2",
+    "ioredis": "^4.28.5",
+    "subscriptions-transport-ws": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
