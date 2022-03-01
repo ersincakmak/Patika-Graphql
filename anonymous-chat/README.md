@@ -2,9 +2,6 @@
 
 You can reach out this homework on [this link.](https://app.patika.dev/moduller/graphql/project-03)
 
-Client [DEMO]()
-Server [DEMO]()
-
 ## Client Installation 
 
 You need to create an .env file on the root directory of the client and fill it like below
