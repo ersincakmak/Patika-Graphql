@@ -1,0 +1,41 @@
+.newQuestion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.newQuestion-container h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.newQuestion-container .fieldList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  flex: 1;
+}
+
+.newQuestion-container .fieldList__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.newQuestion-container button {
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.newQuestion-container .fieldList__buttons {
+  display: flex;
+  gap: 1rem;
+}

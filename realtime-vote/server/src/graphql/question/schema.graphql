@@ -1,0 +1,35 @@
+type Option {
+  title: String!
+  voteCount: Int!
+}
+
+type Question {
+  id: ID!
+  title: String!
+  options: [Option]!
+}
+
+input CreateQuestionInput {
+  title: String!
+  options: [String]!
+}
+
+input VoteInput {
+  questionId: ID!
+  optionTitle: String!
+}
+
+type Query {
+  questions: [Question]!
+  question(id: ID!): Question!
+}
+
+type Mutation {
+  createQuestion(input: CreateQuestionInput): Question!
+  vote(input: VoteInput): Question!
+}
+
+type Subscription {
+  questionCreated: Question!
+  questionVoted(questionId: ID): Question!
+}
