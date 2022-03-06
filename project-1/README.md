@@ -2,7 +2,9 @@
 
 This project [link](https://app.patika.dev/moduller/graphql/project-01).
 
- I took the data from [this](https://github.com/annexare/Countries) repo, thanks to them for created that repo.
+I took the data from [this](https://github.com/annexare/Countries) repo, thanks to them for created that repo.
+
+This project has no demo link, because I combined the whole project into one repository and couldn't deploy the server.
 
 ## Installation
 

@@ -2,6 +2,8 @@
 
 This homework [link](https://app.patika.dev/moduller/graphql/odev-06).
 
+This project has no demo link, because I combined the whole project into one repository and couldn't deploy the server.
+
 ## Installation
 
 You need to start server and client individually. First go to server directory and run this command
